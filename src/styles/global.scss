@@ -1,0 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #444;
+}
+
+p {
+  color: #fff;
+}
+
+nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+footer {
+  background: #0C0091;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
