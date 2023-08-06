@@ -6,6 +6,8 @@ import UXIcon from "../assets/ux_ui_icon.svg";
 import WebAppIcon from "../assets/web_app_mobile_icon.svg";
 import DesignIcon from "../assets/design_icon.svg";
 import DevelopmentIcon from "../assets/development_icon.svg";
+import ClientKuhi from "../assets/kuhi_logo.png";
+import ClientDoza from "../assets/doza-logotipo-completo.png";
 import "../styles/landing.scss";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
@@ -50,6 +52,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
             Damos vida a su visión con la última tecnología y tendencias de
             diseño.
           </p>
+        </div>
+      </div>
+      <div class="clients">
+        <h2>Ellos ya confiaron en nosotros</h2>
+        <div class="clients_list">
+          <a href="http://alimentoskuhi.com.mx/" target="_blank">
+            <img src={ClientKuhi} alt="Alimentos Kuhi" />
+          </a>
+          <a href="https://resistenciasytermopares.com/" target="_blank">
+            <img src={ClientDoza} alt="Doza Resistencias y Termopares" />
+          </a>
         </div>
       </div>
     </main>

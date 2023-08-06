@@ -33,12 +33,36 @@ main {
       }
     }
   }
+
+  .clients {
+    .clients_list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   main {
     .services {
       grid-template-columns: repeat(4, 1fr);
+    }
+
+    .clients {
+      .clients_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   }
 }
