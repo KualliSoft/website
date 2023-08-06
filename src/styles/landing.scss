@@ -5,8 +5,40 @@ header {
   text-align: center;
 }
 
-.banner {
-  h2 {
-    font-size: 3rem;
+main {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+
+    div {
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.5);
+      margin-bottom: 10px;
+      padding: 140px 20px 30px 20px;
+      text-align: left;
+
+      h3 {
+        margin-top: 0px;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    .services {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

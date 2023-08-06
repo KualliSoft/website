@@ -1,7 +1,11 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+import LandingHeader from "../components/LandingHeader.astro";
 import Footer from "../components/Footer.astro";
+import UXIcon from "../assets/ux_ui_icon.svg";
+import WebAppIcon from "../assets/web_app_mobile_icon.svg";
+import DesignIcon from "../assets/design_icon.svg";
+import DevelopmentIcon from "../assets/development_icon.svg";
 import "../styles/landing.scss";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
@@ -12,9 +16,42 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <Header title={SITE_TITLE} />
+    <LandingHeader />
     <main style="text-align: center;">
-      <h3>En construcción...</h3>
+      <div class="services">
+        <div>
+          <img src={UXIcon} alt="" title="UX / UI" />
+          <h3>UX / UI</h3>
+          <p>
+            Diseñamos interfaces que son intuitivas, eficientes y faciles de
+            usar.
+          </p>
+        </div>
+        <div>
+          <img src={WebAppIcon} alt="" title="UX / UI" />
+          <h3>Web y Mobile App</h3>
+          <p>
+            Transformamos las ideas en experiencias web y aplicaciones móviles
+            excepcionales.
+          </p>
+        </div>
+        <div>
+          <img src={DesignIcon} alt="" title="UX / UI" />
+          <h3>Diseño</h3>
+          <p>
+            Creamos diseños visualmente impresionantes que se conectan con su
+            audiencia.
+          </p>
+        </div>
+        <div>
+          <img src={DevelopmentIcon} alt="" title="UX / UI" />
+          <h3>Desarrollo</h3>
+          <p>
+            Damos vida a su visión con la última tecnología y tendencias de
+            diseño.
+          </p>
+        </div>
+      </div>
     </main>
     <Footer />
   </body>
