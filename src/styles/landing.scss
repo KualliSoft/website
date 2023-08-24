@@ -25,6 +25,7 @@ main {
       h3 {
         margin-top: 0px;
         font-size: 16px;
+        color: #67E6B0;
       }
 
       p {
@@ -35,7 +36,11 @@ main {
   }
 
   .clients {
+
     .clients_list {
+      background: rgba(30, 41, 59, 0.5);
+      border-radius: 8px;
+      padding: 10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 10px;

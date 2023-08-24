@@ -12,6 +12,9 @@ body {
   overflow-wrap: break-word;
   line-height: 1.5;
   color: #e2e8f0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 p {
@@ -30,9 +33,13 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 
-
-  h1 {
+  .logo {
     color: #fff;
+
+    img {
+      width: 200px;
+      height: auto;
+    }
   }
 
   ul {
@@ -45,10 +52,11 @@ nav {
 .button {
   padding: 14px;
   border-radius: 8px;
-  background: rgba(30, 41, 59, 0.5);
+  background: #67E6B0;
   cursor: pointer;
   margin-top: 14px;
   display: inline-block;
+  color: #0d192b;
 }
 
 footer {
